@@ -1,5 +1,9 @@
 using Sirenix.OdinInspector;
+using System;
+using System.Diagnostics;
 
+[Conditional("UNITY_EDITOR")]
+[AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)]
 public class ColoredTitleGroupAttribute : PropertyGroupAttribute
 {
     public string Subtitle;
