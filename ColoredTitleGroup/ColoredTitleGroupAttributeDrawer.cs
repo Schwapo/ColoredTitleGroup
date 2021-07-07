@@ -1,4 +1,4 @@
-﻿using Sirenix.OdinInspector;
+using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.OdinInspector.Editor.ValueResolvers;
 using Sirenix.Utilities;
@@ -16,7 +16,7 @@ public class ColoredTitleGroupAttributeDrawer : OdinAttributeDrawer<ColoredTitle
 
     protected override void Initialize()
     {
-        titleResolver = ValueResolver.GetForString(Property, Attribute.GroupName);
+        titleResolver = ValueResolver.GetForString(Property, Attribute.GroupID);
         subtitleResolver = ValueResolver.GetForString(Property, Attribute.Subtitle);
         titleColorResolver = ValueResolver.Get<Color>(Property, Attribute.TitleColor);
         subtitleColorResolver = ValueResolver.Get<Color>(Property, Attribute.SubtitleColor);
