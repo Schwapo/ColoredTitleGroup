@@ -6,7 +6,7 @@ using Sirenix.Utilities.Editor;
 using UnityEditor;
 using UnityEngine;
 
-public class ColoredTitleGroupAttributeDrawer : OdinAttributeDrawer<ColoredTitleGroupAttribute>
+public class ColoredTitleGroupAttributeDrawer : OdinGroupDrawer<ColoredTitleGroupAttribute>
 {
     private ValueResolver<string> titleResolver;
     private ValueResolver<string> subtitleResolver;
